@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@300&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+
+  --pri-col: white;
+  --sec-col: black;
+  --font-col: darkorange;
+  --font2-col: #0a1f33;
+  --stc-col: grey;
+}
+
+body {
+  background-color: var(--pri-col);
+  color: var(--sec-col);
+}
+
+.container {
+  padding: 10px 7%;
+}
+
+.name img {
+  text-decoration: none;
+  width: 200px;
+}
+
+.myname {
+  color: var(--font-col);
+}
+
+.brief {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 5%;
+  color: var(--stc-col);
+}
+
+.text {
+  margin-top: 10%;
+  font-size: 34px;
+}
+
+.text h1 {
+  margin-top: 2%;
+  font-size: 52px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.text h1 span {
+  margin-top: 5px;
+  font-size: 57px;
+  font-weight: 600;
+
+}
+
+.text auto-type {
+  margin-top: 8px;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  margin-right: 24px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 18px;
+  text-align: right;
+}
+
+
+#span {
+  color: var(--sec-col);
+  display: block;
+}
+
+.chatbot-toggler {
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--font-col);
+  transition: all 0.2s ease;
+}
+
+body.show-chatbot .chatbot-toggler {
+  transform: rotate(90deg);
+}
+
+.chatbot-toggler span {
+  color: var(--pri-col);
+  position: absolute;
+}
+
+.chatbot-toggler span:last-child,
+body.show-chatbot .chatbot-toggler span:first-child {
+  opacity: 0;
+}
+
+body.show-chatbot .chatbot-toggler span:last-child {
+  opacity: 1;
+}
+
+.chatbot {
+  position: fixed;
+  right: 35px;
+  bottom: 90px;
+  width: 420px;
+  background: var(--pri-col);
+  border-radius: 15px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.5);
+  transform-origin: bottom right;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease;
+}
+
+body.show-chatbot .chatbot {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.chatbot header {
+  padding: 16px 0;
+  position: relative;
+  text-align: center;
+  color: var(--pri-col);
+  background: var(--font2-col);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot header span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  display: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+header h2 {
+  font-size: 1.4rem;
+}
+
+.chatbot .chatbox {
+  overflow-y: auto;
+  height: 510px;
+  padding: 30px 20px 100px;
+}
+
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+  background: var(--pri-col);
+  border-radius: 25px;
+}
+
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 25px;
+}
+
+.chatbox .chat {
+  display: flex;
+  list-style: none;
+}
+
+.chatbox .outgoing {
+  margin: 20px 0;
+  justify-content: flex-end;
+}
+
+.chatbox .incoming span {
+  width: 32px;
+  height: 32px;
+  color: var(--pri-col);
+  cursor: default;
+  text-align: center;
+  line-height: 32px;
+  align-self: flex-end;
+  background: var(--font-col);
+  border-radius: 4px;
+  margin: 0 10px 7px 0;
+}
+
+.chatbox .chat p {
+  white-space: pre-wrap;
+  padding: 12px 16px;
+  border-radius: 10px 10px 0 10px;
+  max-width: 75%;
+  color: var(--pri-col);
+  font-size: 0.95rem;
+  background: var(--font-col);
+}
+
+.chatbox .incoming p {
+  border-radius: 10px 10px 10px 0;
+}
+
+.chatbox .chat p.error {
+  color: #721c24;
+  background: #f8d7da;
+}
+
+.chatbox .incoming p {
+  color: #000;
+  background: #f2f2f2;
+}
+
+.chatbot .chat-input {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 3px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input textarea {
+  height: 55px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  max-height: 180px;
+  padding: 15px 15px 15px 0;
+  font-size: 0.95rem;
+}
+
+.chat-input span {
+  align-self: flex-end;
+  color: var(--font-col);
+  cursor: pointer;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  font-size: 1.35rem;
+}
+
+.chat-input textarea:valid~span {
+  visibility: visible;
+}
+
+.footer {
+  background: var(--font2-col);
+  width: 100%;
+  padding: 20px 0;
+  color: var(--font-col);
+  font-weight: 300;
+  margin-top: 160px;
+}
+
+.footer-text {
+  color: var(--pri-col);
+  text-align: left;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 10px;
+  margin-left: 90px;
+}
+
+.footer .footer-col {
+  margin-right: 50px;
+}
+
+.footer-row .footer-col h4 {
+  color: var(--pri-col);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 15px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 4px;
+  color: #bfbfbf;
+
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 15px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover {
+  color: var(--font-col);
+}
+
+
+.contact-us .contact-icon {
+  color: var(--font-col);
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 10px 5%;
+  }
+
+  .name img {
+    width: 150px;
+  }
+
+  .brief {
+    font-size: 18px;
+  }
+
+  .text h1 {
+    font-size: 40px;
+  }
+
+  .text h1 span {
+    font-size: 45px;
+  }
+
+  .text {
+    margin-top: 5%;
+  }
+
+  .footer .footer-row {
+    margin-left: 10px;
+  }
+
+  .footer .footer-col {
+    margin-right: 20px;
+  }
+
+  .footer-col .icons {
+    gap: 20px;
+  }
+}

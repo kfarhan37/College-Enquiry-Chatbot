@@ -1,0 +1,788 @@
+{
+    "queries" :[
+        {
+            "tag":"greeting",
+            "patterns" : [
+                "hi",
+                "hello",
+                "heyy",
+                "hii bot",
+                "hey"
+
+            ],
+            "responses" : [
+                "Hello!",
+                "Hey there!",
+                "Hey!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag":"ok",
+            "patterns" : [
+                "ok",
+                "okayy"
+            ],
+            "responses" : [
+                "Yeah! If you have any questions, please don't hesistate to ask",
+                "Great! If you have any questions, please don't hesistate to ask"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag":"nothing",
+            "patterns" : [
+                "nothing"
+            ],
+            "responses" : [
+                "Okayy!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag":"ask",
+            "patterns" : [
+                "what can i ask?",
+                "what can you help"
+            ],
+            "responses" : [
+                "Ask anything regarding our campus mate!"
+            ],
+            "context_set": ""
+        },
+
+        {
+            "tag":"intro",
+            "patterns" : [
+                "who are you?",
+                "who r u"
+            ],
+            "responses" : [
+                "I am a GPREC Bot, How can I help you today?"
+            ],
+            "context_set": ""
+        },
+
+        {
+            "tag":"build",
+            "patterns" : [
+                "who built you?",
+                "who built u"
+            ],
+            "responses" : [
+                "I was built by GPREC Students"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag":"goodbye",
+            "patterns": [
+                "see you! goodbye",
+                "bye bye",
+                "c u",
+                "see you later",
+                "goodbye",
+                "bye"
+            ],
+            "responses": [
+                "Okay! Goodbye",
+                "Goodbye!",
+                "Glad to meet you. Bye!"
+            ],
+            "context_set":""
+        },
+
+        {
+            "tag":"gprec",
+            "patterns": [
+                "is gprec a good college?",
+                "about gprec",
+                "is it a good college"
+            ],
+            "responses": [
+                "The learning of a student at GPREC is a joyful journey transforming an aspiring young mind to an inspiring engineer, Its definitely a good choice for you",
+                "The College is known for its quality initiatives. All the UG courses in the institute are accredited by National Board of Accreditation (NBA) and National Assessment and Accreditation Council (NAAC) with A+ Grade. The college got all India rank 177 by NIRF-2019 rankings."
+                
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"like",
+            "patterns": [
+                "like?"
+            ],
+            "responses": [
+                "Academics, Admissions, Placements, Hostels, Sports & What not? You ask, We provide!"
+                
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"found",
+            "patterns": [
+                "When was gprec founded",
+                "founded date",
+                "from when gpprec is autonomous"
+            ],
+            "responses": [
+                "Established in 1984-85, it is one of the earliest private engineering colleges in Andhra Pradesh state. GPREC has been functioning as an autonomous institution since 2006."                
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"branch",
+            "patterns": [
+                "courses",
+                "branches",
+                "departments"
+            ],
+            "responses": [
+                "There are totally six departments in GPREC namely : CSE, ECE, EEE, ME, CE & ECS"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"placement",
+            "patterns": [
+                "placements",
+                "placements in this clg",
+                "placements in gprec",
+                "What about placements?"
+            ],
+            "responses": [
+                "The Training and Placement Cell is headed by Dr.B.Veerabhadra Reddy, Professor of Mechanical Engineering. In line with the requirement of industry, the college arranges training for all the students right from the first year of their admission in the college."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"companies",
+            "patterns": [
+                "placements stats?",
+                "placement record",
+                "placement record of gprec?",
+                "how are placements in this college",
+                "stats"
+            ],
+            "responses": [
+                "So, for 2021 batch - 544 offers (Cognizant-189; TCS-153, Infosys-81, DXC-101; LTTS-10, Hexaware Technologies-9, Virtusa-1) and for 2020 Batch - 600+ offers with an average salary package of Rs. 4.11 Lacs per annum."
+            ],
+            "context_set":""
+        },
+
+        {
+            "tag":"hostel",
+            "patterns": [
+                "are there hostels in gprec?",
+                "hostel facility",
+                "hostels",
+                "hostels in gprec"
+            ],
+            "responses": [
+                "Yess! There are two separate hostels available for both boys & girls"
+            ],
+            "context_set":""
+        },
+        {
+            
+            "tag":"girlshostel",
+            "patterns": [
+                "girls hostel",
+                "girls",
+                "fees of girls hostel",
+                "tell me in detail about girls hostel",
+                "what about girls"
+            ],
+            "responses": [
+                "Hostel accommodation for the B-Tech girl students is available in G.Narayanamma Bhalikala Vasathi Gruham, Kurnool. Girls Hostel Fee per year: Ordinary Room(common bathroom) Rupees-65,500 & Deluxe Room ( AC + attached bathroom) Rupees-75,500"
+            ],
+            "context_set":""
+        },
+        
+        {     
+            "tag":"boyshostel",
+            "patterns": [
+                "boys hostel",
+                "boys",
+                "fees of boys hostel",
+                "tell me in detail about boys hostel",
+                "what about boys"
+
+            ],
+            "responses": [
+                "Hostel accommodation for the B.Tech boys is available in Boys Hostel, located adjacent to the college campus. Seats will be filled on first-cum-first serve basis. Boys Hostel Fee per year: Ordinary Room (common bathroom)  Rupees-70,500 & Special Room ( attached bathroom) Rupees-75,500"
+            ],
+            "context_set":""
+        },
+        {     
+            "tag":"boyshostelincharge",
+            "patterns": [
+            
+                "boys hostel incharge",
+                "incharge of boys hostel?"
+
+            ],
+            "responses": [
+
+                "K.Istaq Ahmed sir is the incharge of our boys hostel."
+            ],
+            "context_set":""
+        },
+        {
+            
+            "tag":"wifi",
+            "patterns": [
+                "wifi in college",
+                "is there wifi available in college"
+            ],
+            "responses": [
+                "Yes, our college is wifi enabled campus."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"Btechadmissions",
+            "patterns": [
+                "admissions in the college",
+                "how many categories",
+                "btech",
+                "admissions in gprec",
+                "tell me about admissions"
+            ],
+            "responses": [
+                "For B-Tech, of the sanctioned intake in a branch of engineering, 70% of the seats are called Category-A seats or Convener seats. The remaining 30% seats are called Category-B seats or Management Quota Seats."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"Mtechadmissions",
+            "patterns": [
+                "mtech admissions in the college",
+                "mtech",
+                "and for mtech"
+            ],
+            "responses": [
+                "For M-Tech, of the sanctioned intake in a branch of engineering, 70% of the seats are called Category-A seats or Convener seats. The remaining 30% seats are called Category-B seats or Management Quota Seats."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"facility",
+            "patterns": [
+                "facilities in the college",
+                "college facilities"
+            ],
+            "responses": [
+                "Our college offers state-of-the-art facilities to enhance your learning experience. This includes wifi enabled campus, well-equipped laboratories, lush greenery, a vast library, sports facilities, and comfortable accommodation options. We strive to create an environment that supports both academic and extracurricular activities."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"feestructure",
+            "patterns": [
+                "tuition fee",
+                "Cateogory A",
+                "Category B",
+                "how much is the btech fee per year?",
+                "standard fee for the courses?",
+                "fees"
+            ],
+            "responses": [
+                "The Fee Structure for Category-A  Admission Seats is Rupees : 75,000. ( For All Branches). The Fee Structure for Category-B Admission Seats is Rupees : 2,10,000  for CSE, CSB, CSM, CSD & Rupees : 1,75,000 for ECE and  Rupees : 1,00,000 for EEE, MEC, CIV."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"scholarship",
+            "patterns": [
+                "is there any scholarship available?",
+                "scholarship",
+                "scholarship offered for students?",
+                "how much rank should I get to get scholarship?"
+            ],
+            "responses": [
+                "The college offers complete tuition fee waiver for all the four years of the B.Tech course to students who join this college with less than 2000 rank in EAMCET."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"collegetimings",
+            "patterns": [
+                "college timings",
+                "timings of college"
+            ],
+            "responses": [
+                "Our college has two different shifts - 8:30 AM to 3:30 PM for I & III years and 9:30 AM to 4:30 PM for II & IV years."      
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"buspass",
+            "patterns": [
+                "bus timings",
+                "timings of the bus",
+                "Where can i get bus pass?",
+                "where should i get my bus pass from?"
+            ],
+            "responses": [
+                "You can get your college bus pass from x sir, near R&D Lab, Mechanical Block 2.",
+                "The bus will come to their respective stops, 45 mins before the college starts"
+
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"bustimings",
+            "patterns": [
+                "bus timings",
+                "timings of the bus"
+            ],
+            "responses": [
+                "The bus will come to their respective stops, 45 mins before the college starts"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"buspassfee",
+            "patterns": [
+                "fee of bus pass?",
+                "buspass fee"
+            ],
+            "responses": [
+                "The annual fee for bus pass is Rupees 7500."                
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"sports",
+            "patterns": [
+                "any competetions will be conducted?",
+                "how many different kinds of sports are there?",
+                "is there any sports club?",
+                "any intracollege competetions",
+                "any intercollege competetions",
+                "sports activities"
+            ],
+            "responses": [
+                "Our college has seperate sports club and also conducts many competetions on different kinds of sports as well as there will be UDAAN only for sports competetions which will be conducted in every year, from january to february"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"intakecse",
+            "patterns": [
+                "what is the intake of cse in gprec?",
+                "what is the intake of computer science in gprec?"
+            ],
+            "responses": [
+                "The total intake for cse department is around 240."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"intakeece",
+            "patterns": [
+                "what is the intake of ece in gprec?"
+            ],
+            "responses": [
+                "The total intake for ece department is around 180."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"intakecivil",
+            "patterns": [
+                "what is the intake of ce in gprec?",
+                "what is the intake of civil in gprec?"
+            ],
+            "responses": [
+                "The total intake for civil department is around 120."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"intakemech",
+            "patterns": [
+                "what is the intake of me in gprec?",
+                "what is the intake of mechanical in gprec?"
+            ],
+            "responses": [
+                "The total intake for mechanical department is around 120."
+            ],
+            "context_set":""
+        },
+
+
+        {
+            "tag":"cateogory",
+            "patterns": [
+                "bca",
+                "bcb",
+                "bcc",
+                "bcd",
+                "bce",
+                "sc",
+                "st"
+            ],
+            "responses": [
+                "Please specify your branch before cateogory!"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff cse",
+            "patterns": [
+                "what is the cutoff rank for cse in gprec?",
+                "what is the cutoff rank for cse in ur college?"
+
+            ],
+            "responses": [
+                "Please specify your branch & cateogory respecitvely?"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff cse oc",
+            "patterns": [
+                "what is the cutoff rank for oc in cse?",
+                "cse oc"
+            ],
+            "responses": [
+                "For cse oc, the cutoff rank is around 8300 for both males & females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff cse bca",
+            "patterns": [
+                "what is the cutoff rank for bca in cse?",
+                "cse bca"
+
+            ],
+            "responses": [
+                "For cse bc-a, the cutoff rank is around 15100 for males & around 14300 for females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff cse bcb",
+            "patterns": [
+                "what is the cutoff rank for bcb in cse?",
+                "cse bcb"
+                
+            ],
+            "responses": [
+                "For cse bc-b, the cutoff rank is around 11700 for both males & females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff cse bcc",
+            "patterns": [
+                "what is the cutoff rank for bcc in cse?",
+                "cse bcc"
+            ],
+            "responses": [
+                "For cse bc-c, the cutoff rank is around 3450 for males & around 19000 for females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff cse bcd",
+            "patterns": [
+                "what is the cutoff rank for bcd in cse?",
+                "cse bcd"
+            ],
+            "responses": [
+                "For cse bc-d, the cutoff rank is around 14300 for males & around 15100 for females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff cse bce",
+            "patterns": [
+                "what is the cutoff rank for bce in cse?",
+                "cse bce"
+                
+            ],
+            "responses": [
+                "For cse bc-e, the cutoff rank is around 9300 for males & around 10900 for females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff cse sc",
+            "patterns": [
+                "what is the cutoff rank for sc in cse?",
+                "cse sc"
+                
+            ],
+            "responses": [
+                "For cse sc, the cutoff rank is around 28500 for males & around 29400 for females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff cse st",
+            "patterns": [
+                "what is the cutoff rank for st in cse?",
+                "cse st"
+                
+            ],
+            "responses": [
+                "For cse st, the cutoff rank is around 57100 for males & around 48500 for females"
+           ],
+            "context_set":""
+        },
+
+
+
+
+
+        {
+            "tag":"cutoff ece",
+            "patterns": [
+                "what is the cutoff rank for ece in gprec?",
+                "what is the cutoff rank for ece in ur college?"
+
+            ],
+            "responses": [
+                "Can you specify your branch & cateogory?"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff ece oc",
+            "patterns": [
+                "what is the cutoff rank for oc in ece?",
+                "ece oc"
+               
+            ],
+            "responses": [
+                "For ece oc, the cutoff rank is around 17200 for both males & females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff ece bca",
+            "patterns": [
+                "what is the cutoff rank for bca in ece?",
+                "ece bca"
+            ],
+            "responses": [
+                "For ece bc-a, the cutoff rank is around 30250 for males & around 32800 for females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff ece bcb",
+            "patterns": [
+                "what is the cutoff rank for bcb in ece?",
+                "ece bcb"
+                
+            ],
+            "responses": [
+                "For ece bc-b, the cutoff rank is around 29100 for males & around 31000 for females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff ece bcc",
+            "patterns": [
+                "what is the cutoff rank for bcc in ece?",
+                "ece bcc"
+            ],
+            "responses": [
+                "For ece bc-c, the cutoff rank is around 21170 for both males & females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff ece bcd",
+            "patterns": [
+                "what is the cutoff rank for bcd in ece?",
+                "ece bcd"
+            ],
+            "responses": [
+                "For ece bc-d, the cutoff rank is around 33600 for males & around 31700 for females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff ece bce",
+            "patterns": [
+                "what is the cutoff rank for bce in ece?",
+                "ece bce"
+            ],
+            "responses": [
+                "For ece bc-e, the cutoff rank is around 26300 for males & around 23800 for females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff ece sc",
+            "patterns": [
+                "what is the cutoff rank for sc in ece?",
+                "ece sc"
+            ],
+            "responses": [
+                "For ece sc, the cutoff rank is around 69400 for males & around 68300 for females"
+           ],
+            "context_set":""
+        },
+        {
+            "tag":"cutoff ece st",
+            "patterns": [
+                "what is the cutoff rank for st in ece?",
+                "ece st"
+            ],
+            "responses": [
+                "For ece st, the cutoff rank is around 57100 for males & around 48500 for females"
+           ],
+            "context_set":""
+        },
+
+
+
+        {
+            "tag":"cutoff mech",
+            "patterns": [
+                "what is the cutoff rank for mechanical in gprec?",
+                "what is the cutofff rank for mech in gprec?",
+                "what is the cutofff rank for me in gprec?",
+                "what is the cutoff rank for mech in ur college?"
+
+            ],
+            "responses": [
+                "Can you specify your branch & cateogory?"
+           ],
+            "context_set":""
+        },
+
+
+        {
+            "tag":"cutoff mech oc",
+            "patterns": [
+                "what is the cutoff rank for oc in mech?",
+                "what is the cutoff rank for oc in me?",
+                "what is the cutoff rank for oc in mechanical?",
+                "mech oc",
+                "me oc"
+            ],
+            "responses": [
+                "For mechanical oc, the cutoff rank is around 62950 for males & 168500 for females"
+           ],
+            "context_set":""
+        },
+        
+        {
+            "tag":"cutoff mech bca",
+            "patterns": [
+                "what is the cutoff rank for bca in mech?",
+                "what is the cutoff rank for bca in me?",
+                "what is the cutoff rank for bca in mechanical?",
+                "mech bca",
+                "me bca"
+            ],
+            "responses": [
+                "For mechanical bc-a, the cutoff rank is around 159750 for males & 136050 for females"
+           ],
+            "context_set":""
+        },
+
+        {
+            "tag":"cutoff mech bcb",
+            "patterns": [
+                "what is the cutoff rank for bcb in mech?",
+                "what is the cutoff rank for bcb in me?",
+                "what is the cutoff rank for bcb in mechanical?",
+                "mech bcb",
+                "me bcb"
+            ],
+            "responses": [
+                "For mechanical bc-b, the cutoff rank is around 166900 for males & 157650 for females"
+           ],
+            "context_set":""
+        },
+
+        {
+            "tag":"stadium",
+            "patterns": [
+                "indoor stadium",
+                "is there a stadium in gprec?",
+                "stadium"
+            ],
+            "responses": [
+                "Yes! There is an indoor stadium available in our campus with well facilitated court for badminton."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"gym",
+            "patterns": [
+                "gym",
+                "is there a gym in college"
+            ],
+            "responses": [
+                "Yes! There is a gymnastics center open to everyone, right after the college is finished in the evening."
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"gymfee",
+            "patterns": [
+                "should i pay any fee for gym"
+            ],
+            "responses": [
+                "No, Its free & open to every gprecian student."
+            ],
+            "context_set":""
+        },
+        
+        {
+            "tag":"csehod",
+            "patterns": [
+            
+                "hod of cse?",
+                "cse hod?"
+            ],
+            "responses": [
+                "Mr. Kasivishwanath is the H.O.D for CSE Department"
+            ],
+            "context_set":""
+        },
+        {
+            "tag":"ecshod",
+            "patterns": [
+            
+                "hod of ecs?",
+                "ecs hod?"
+            ],
+            "responses": [
+                "Mr. Praveen Sam is the H.O.D for ECS Department"
+            ]
+        },
+        {
+            "tag":"tuitionpayment",
+            "patterns": [
+                "Where should i pay my tuition fee?",
+                "How to pay tuition fee?"
+            ],
+            "responses": [
+                "You can pay the tuition fee by following this link www.gprec.ac.in"
+            ],
+            "context_set":""
+        },
+        {
+
+            "tag":"seminars",
+            "patterns": [
+                "are there seminar galleries in college",
+                "seminar gallery"
+            ],
+            "responses": [
+                "There are two seminar galleries present in our campus."
+            ],
+            "context_set":""
+        }
+    ]
+}
